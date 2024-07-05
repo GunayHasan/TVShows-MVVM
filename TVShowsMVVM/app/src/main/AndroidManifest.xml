@@ -15,6 +15,13 @@
         android:theme="@style/Theme.TVShowsMVVM"
         tools:targetApi="31">
         <activity
+            android:name=".activities.WatchlistActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activities.TVShowDetailsActivity"
             android:exported="false">
             <meta-data
