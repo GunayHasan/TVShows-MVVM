@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity implements TVShowsListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-
         doInitialization();
 
     }
@@ -56,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements TVShowsListener {
             }
         });
         activityMainBinding.imageWatchList.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), WatchlistActivity.class)));
+        activityMainBinding.imageSearch.setOnClickListener(view -> startActivity( new Intent(getApplicationContext(), SearchActivity.class)));
         getMostPopularTVShows();
     }
 
